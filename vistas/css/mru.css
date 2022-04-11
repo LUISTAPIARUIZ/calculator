@@ -1,0 +1,116 @@
+.cuerpo{
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem 0;
+    height:calc(100% -4rem);
+}
+.contenedor-mru{
+    width: 70%;
+    height:90%;
+    min-width: 464px;
+    box-shadow: 1px 1px 5px rgb(78, 77, 77);
+    border-radius: 10px;
+}
+.contenedor-mru__separador{
+    border: 0;
+    border-bottom: solid 1px rgb(95, 95, 95);
+}
+
+.contenedor-mru__titulo{
+    text-align: center;
+}
+.contenedor-mru__selector{
+    display:flex;
+}
+.selector{
+    display:flex;
+    width:50%;
+    height:2rem;
+    margin: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.selector h3 {
+    margin: 0;
+    font-size: 1rem;
+}
+.selector-boton{
+    display:flex;
+    justify-content:center;
+}
+.contenedor-mru__ingreso-datos{
+    display:flex;
+    width: 100%;
+    justify-content:center;
+
+}.ingreso-datos__inputs{
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.ingreso-datos__inputs div{
+    display:flex;
+    justify-content: center;
+    width:50%;
+    padding:5px 0;
+}
+.ingreso-datos__inputs div input{
+    width:7rem;
+    height:1.4rem
+}
+.ingreso-datos__inputs div h4{
+    margin: 0;
+}
+.ingreso-datos__inputs div p{
+    margin: 0
+}
+.ingreso-datos__boton-calcular{
+    display:flex;
+    justify-content:center;
+}
+.contenedor-mru__animacion{
+    width: 100%;
+    margin: 6rem 0 2rem 0;
+}
+.animacion__img{
+    height:24px;
+    position: relative;
+    left: 0;
+
+}
+.img__carro{
+    width:3rem;
+    height:1.5rem;
+}
+.animacion__pista{
+    width: 100%;
+    height:1rem;
+    background-color: rgba(160, 160, 160, 0.578);
+
+}
+.animacion__extremos-medidas{
+    width: 100%;
+    height: 1.5em;
+    display: flex;
+    justify-content: space-between;
+}
+.animacion__extremos-medidas div h5{
+    margin: 0;
+    text-align: center;
+}
+.contenedor-mru__resultados{
+    width: 100%;
+    text-align: center;
+}
+.resultados__mruo{
+    display: flex;
+    justify-content:space-around;
+}
+/* clase ocultar inputs*/
+.ocultar{
+    display:none;
+}
+.mover-carro{
+    position: relative;
+    left:calc(100% - calc(48px));
+}

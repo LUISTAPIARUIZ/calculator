@@ -1,0 +1,102 @@
+:root{
+    --colorPincipal: #ffffffb3;
+    --colorSecundario: #dadada6b;
+    --colorSecundarioMenu: #585858;
+    --colorExtra-1: #000000c4;
+}
+
+.cabecera{
+    width:100%;
+    height:4rem;
+    background-color:var(--colorPincipal);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:static;
+    border-bottom:solid 1px #e7e7e7c5;
+}
+.cabecera__menu-desplegable{
+    position:absolute;
+    top: 0;
+    left:-12rem;
+    width:12rem;
+    height:100%;
+    background-color:var(--colorSecundarioMenu);
+    transition: .5s;
+    z-index: 99999;
+}
+.menu-desplegable{
+    width:100%;
+    height:100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu-desplegable-item{
+    width:100%;
+    height:2.5rem;
+    background-color:var(--colorPincipal);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow: 1px 1px 5px rgba(81, 81, 81, 0.564);
+}
+.boton-salir{
+    background-color: rgb(240, 58, 58);
+}
+
+
+.menu-active{
+    position:absolute;
+    left:0;
+}
+.cabecera__boton-menu{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin:0 4rem 0 4rem ;
+    border-radius: 5px;
+    background-color:var(--colorSecundario)
+}
+.boton-menu{
+    text-decoration: none;
+    font-size:2.5rem;
+    color: var(--colorExtra-1);
+
+}
+
+.cabecera__boton-menu:active{
+    background-color:#8b8b8bc5;
+}
+.cabecera__logo{
+    width:20%;
+    min-width:10rem;
+    height:2.5rem;
+    border-radius:10px;
+    background-color: black;
+}
+
+
+.cabecera__iniciar-sesión{
+    width:8.5rem;
+    height:2.5rem;
+    background-color:var(--colorSecundario);
+    border-radius:5px;
+    margin:0 1rem 0 1rem;
+}
+.boton_iniciar-sesion{
+    height: 100%;
+    display:flex;
+    color: var(--colorExtra-1);
+    justify-content:center;
+    align-items:center;
+    text-decoration: none;
+}
+.boton_iniciar-sesion__icono{
+    font-size:1.2rem;
+    margin-left: 0.5rem
+}
+.boton_iniciar-sesion__texto{
+    margin: 0;
+    margin:0 .5rem 0 .5rem;
+    font-size:.8rem;
+}

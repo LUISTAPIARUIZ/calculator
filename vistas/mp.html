@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/css_generales/cabecera.css" type="text/css">
+    <link rel="stylesheet" href="css/css_generales/normalize.css" type="text/css">
+    <link rel="stylesheet" href="../vistas/css/mru.css">
+    <link rel="stylesheet" href="../icons/logo/fonts/style.css" type="text/css">
+    <link rel="stylesheet" href="../icons/variado/fonts/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/css_generales/pie-pagina.css" type="text/css">
+    <link rel="stylesheet" href="css/mruv.css" type="text/css">
+    <link rel="stylesheet" href="css/mp.css" type="text/css">
+    <script src="../js/menu-desplegable.js" type="text/javascript" defer></script>
+    <script src="../js/mp.js" type="text/javascript" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+            <!--cuerpo-->
+    <div class="contenedor">
+        <!--cabezera-->
+        <header class="cabecera">
+
+            <div class="cabecera__menu-desplegable" id="menu-desplegable" >
+                 <ul class="menu-desplegable ">
+                    <li class="menu-desplegable-item boton-salir" id="boton-cerrar-menu">
+                        <div class="boton-salir-menu icon-chevron-thin-left" >
+                        </div>
+                    </li>
+                    <li class="menu-desplegable-item"><a href="index.html">Inicio</a></li>
+                    <li class="menu-desplegable-item"> Inicio</li>
+                    <li class="menu-desplegable-item"> Inicio</li>
+                 </ul>
+            </div>
+
+            <div class="cabecera__boton-menu" >
+                <a href="#" class="boton-menu icon-menu" id="menu-desplegable-tres-barras">
+                    <span class="boton-menu__icono-tres-barras"></span>
+                </a>
+            </div>
+
+            <div class="cabecera__logo">
+                <a class="logo" href="">
+                    <img class="logo__img" src="" alt="">
+                </a>
+            </div>
+
+            <div class="cabecera__iniciar-sesión">
+                <a href="" class="boton_iniciar-sesion">
+                    <span class=" icon-user"></span>
+                    <h5 class="boton_iniciar-sesion__texto">Iniciar Sesion</h5>
+                </a>
+            </div>
+            
+        </header>
+        <!-- fin cabezera-->
+        <main class="cuerpo">
+            <div class="contenedor-mru">
+                <h2 class="contenedor-mru__titulo">
+                    Movimiento Parabolico de Caida libre
+                </h2>
+                <hr class="contenedor-mru__separador">
+                <div class="contenedor-mru__selector">
+                    <div class="selector">
+                        <h3 class="selector__texto">
+                            Calcular:
+                        </h3>
+                        <select class="selector__opciones-de-calculo" id="selector__opciones-de-calculo">
+
+                            <option >Distancia Max</option>
+                            
+                            <option >Atura Max</option>
+                            
+                            <option>Posicion en tiempo N</option>
+                            
+                            <option>Tiempo de Vuelo</option>
+                            
+                        </select>
+                    </div>
+                    <div class="selector">
+                        <h3 class="selector__und-medida">
+                            Und Medidad:
+                        </h3>
+                        <select class="selector__und-medida" id="selector__und-medida">
+
+                            <option>metros/segundos</option>
+                            
+                            <option>metros/hora</option>
+                            
+                            <option>kilometros/segundos</option>
+                            
+                            <option>kilometros/hora</option>
+                            
+                        </select>
+                    </div>
+                    <div class="selector">
+                        <h3 class="selector__und-medida">
+                            Gravedad:9,8m/2
+                        </h3>
+                    </div>
+                </div>
+                <div class="selector-boton">
+                    <button class="selector-boton__ir" id="selector-boton__ir">
+                        ir
+                    </button>
+                </div>
+                <hr class="contenedor-mru__separador">
+                <div class="contenedor-mru__ingreso-datos ocultar">
+                    <div class="ingreso-datos__inputs">
+
+                          <!---Angulo-->
+                          <div class="inputs-angulo" id="inputs-angulo">
+                            <h4 class="inputs-angulo-txt">
+                                Angulo:
+                            </h4>
+                            <input type="text" class="inputs-angulo__dato" id="input-angulo__dato">
+                            <p class="inputs-angulo__und" id="input-angulo__und"></p>
+                        </div>
+                        <!---FIN Angulo-->
+                        
+                        <!---Velocidad Inicial-->
+                        <div class="inputs-velocidad-inicial" id="inputs-velocidad-inicial">
+                            <h4 class="inputs-velocidad-inicial">
+                                Velocidad Inicial:
+                            </h4>
+                            <input type="text" class="inputs-velocidad-inicial__dato" id="input-velocidad-inicial__dato">
+                            <p class="inputs-velocidad-inicial__und" id="input-velocidad-inicial__und"></p>
+                        </div>
+                        <!---FIN Velocidad-Inicial-->
+
+                        
+                        <!--tiempo-->
+                        <div class="inputs-tiempo" id="input-tiempo">
+                            <h4 class="inputs-tiempo__texto">
+                                Tiempo:
+                            </h4>
+                            <input type="text" class="inputs-tiempo__dato" id="input-tiempo__dato">
+                            <p class="inputs-tiempo__und" id="input-tiempo__und"></p>
+                        </div>
+                        <!-- FIN tiempo-->
+
+                    </div>
+                </div>
+                <div class="ingreso-datos__boton-calcular ocultar">
+                    <button class="boton-calcular" id="boton-calcular">
+                        Calcular
+                    </button>
+                </div>
+                <hr class="contenedor-mru__separador  ocultar">
+                <!-- ANIMACION-->
+                <div class="contenedor-mru__animacion">
+                    <canvas class="my-chart" id="myChart">
+                    </canvas>
+                </div>
+                <hr class="contenedor-mru__separador">
+                 <!-- FIN  ANIMACION-->
+
+                <!-- RESULTADOS-->
+                <div class="contenedor-mru__resultados">
+                    <div class="resultados__titulo">
+                        <h3 class="resultados__titulo__texto">
+                            Resultados
+                        </h3>
+                    </div>
+                    
+                    <div class="resultados__mruo">
+                        <h4 class="resultados__mruo__velocidad" id="resultados__mp__velocidad-inicial">
+                            Velicidad I:..
+                        </h4>
+                        <h4 class="resultados__mp__angulo" id="resultados__mp__angulo">
+                            Angulo:......
+                        </h4>
+                        <h4 class="resultados__mp__tiempo-vuelo" id="resultados__mp__tiempo-vuelo">
+                            Tiempo de vuelo:....
+                        </h4>
+                        <h4 class="resultados__mp__tiempo-vuelo" id="resultados__mp__distancia-max">
+                            Distancia Max:....
+                        </h4>
+                        <h4 class="resultados__mp__tiempo-vuelo" id="resultados__mp__alutura-max">
+                            Altura Max:....
+                        </h4>
+                        <h4 class="resultados__mp__tiempo-vuelo" id="resultados__mp__tiempo-ingresado">
+                            Tiempo Ingresado:....
+                        </h4>
+                    </div>
+                </div>
+                <!--FIN RESULTADOS-->
+            </div>
+        </main>
+        <footer class="pie-pagina">
+            <div class="pie-pagina__acerca-de">
+                
+                <ul>
+                    <h3>
+                        Acerca de:
+                    </h3>
+                    <li><a href=""> Reporta error</a></li>
+                    <li><a href=""> Contactame</a></li>
+                    <li><a href=""> Dejar comentarior</a></li>
+                </ul>
+            </div>
+            <div class="pie-pagina__redes-s">
+                <ul>
+                    <li><span class="icon-facebook"></span></li>
+                    <li><span class="icon-twitter"></span></li>
+                    <li><span class="icon-instagram"></span></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
