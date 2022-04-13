@@ -100,3 +100,14 @@
     margin:0 .5rem 0 .5rem;
     font-size:.8rem;
 }
+@media (max-width: 450px) { 
+    .cabecera__boton-menu{
+        margin:0 1rem 0 1rem ;
+    }
+    .boton_iniciar-sesion__texto{
+        display:none;
+    }
+    .cabecera__iniciar-sesión{
+        width:2.8rem;
+    }
+ }

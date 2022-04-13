@@ -7,7 +7,6 @@
 .contenedor-mru{
     width: 70%;
     height:90%;
-    min-width: 464px;
     box-shadow: 1px 1px 5px rgb(78, 77, 77);
     border-radius: 10px;
 }
@@ -21,10 +20,12 @@
 }
 .contenedor-mru__selector{
     display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
 }
 .selector{
     display:flex;
-    width:50%;
+    width:45%;
     height:2rem;
     margin: 1rem;
     align-items: center;
@@ -47,11 +48,11 @@
     display:flex;
     flex-wrap: wrap;
     width: 100%;
+    justify-content: space-around;
 }
 .ingreso-datos__inputs div{
     display:flex;
     justify-content: center;
-    width:50%;
     padding:5px 0;
 }
 .ingreso-datos__inputs div input{
@@ -105,6 +106,7 @@
 .resultados__mruo{
     display: flex;
     justify-content:space-around;
+    flex-wrap: wrap;
 }
 /* clase ocultar inputs*/
 .ocultar{
@@ -113,4 +115,9 @@
 .mover-carro{
     position: relative;
     left:calc(100% - calc(48px));
+}
+@media (max-width: 450px) { 
+    .contenedor-mru{
+        width: 90%;
+    }
 }
