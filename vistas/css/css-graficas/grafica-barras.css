@@ -1,0 +1,20 @@
+.contenedor-grafica__datos-primarios div{
+    margin: 10px;
+    text-align: center;
+}
+.contenedor__datos-ingresados{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+
+}
+.contenedor__datos-ingresados div{
+    text-align: center;
+    margin:8px 0;
+}
+.contenedor__datos-ingresados div input{
+    margin:2px 0 ;
+}
+.ocultar-div-datos{
+    display:none;
+}

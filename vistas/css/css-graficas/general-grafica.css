@@ -1,0 +1,42 @@
+.contenedor-grafica{
+    width:75%;
+    margin: 2rem 0 2rem 0;
+    border: solid 1px rgba(29, 28, 28, 0.2);
+    box-shadow:1px 1px 5px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+.contenedor-grafica__titulo{
+    text-align:center;
+}
+.contenedor-grafica__datos-primarios,
+.contenedor-grafica__boton-descargar-png,
+.contenedor-grafica__boton-calcular{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+.contenedor__boton-ir{
+    margin: 15px;
+    display:flex;
+    justify-content:center;
+}
+.contenedor-grafica__grafica-barras{
+    display:flex;
+    justify-content:center;
+}
+.myChart{
+    width: 95%;
+    height:20rem;
+}
+.boton__ir,.boton-calcular,.boton-descargar-png{
+    background-color:rgba(0, 66, 247, 0.226);
+    border-color:rgba(0, 0, 0, 0.37);
+    border-radius:5px;
+    cursor: pointer;
+}
+.ocultar{
+    display:none;
+}
+.contenedor-grafica__boton-descargar-png{
+    margin: 10px 0;
+}

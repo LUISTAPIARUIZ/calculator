@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/css_generales/cabecera.css" type="text/css">
+    <link rel="stylesheet" href="css/css_generales/normalize.css" type="text/css">
+    <link rel="stylesheet" href="../icons/logo/fonts/style.css" type="text/css">
+    <link rel="stylesheet" href="../icons/variado/fonts/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/css_generales/pie-pagina.css" type="text/css">
+    <link rel="stylesheet" href="css/css-graficas/general-grafica.css">
+    <link rel="stylesheet" href="css/css-graficas/grafica-barras.css">
+    <script src="../js/menu-desplegable.js" type="text/javascript" defer></script>
+    <script src="../js/js-graficos/grafico-barras.js" type="text/javascript" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="contenedor">
+    <!--cuerpo-->
+    <div class="contenedor">
+        <!--cabezera-->
+        <header class="cabecera">
+
+            <div class="cabecera__menu-desplegable" id="menu-desplegable" >
+                 <ul class="menu-desplegable ">
+                    <li class="menu-desplegable-item boton-salir" id="boton-cerrar-menu"> 
+                        <div class="boton-salir-menu icon-chevron-thin-left" >
+                        </div>
+                    </li>
+                    <li class="menu-desplegable-item"><a href="../index.html">Inicio <spam class="icon-home"></spam></a></li>
+                    <li class="menu-desplegable-item"> Inicio</li>
+                    <li class="menu-desplegable-item"> Inicio</li>
+                 </ul>
+            </div>
+
+            <div class="cabecera__boton-menu" >
+                <a href="#" class="boton-menu icon-menu" id="menu-desplegable-tres-barras">
+                    <span class="boton-menu__icono-tres-barras"></span>
+                </a>
+            </div>
+
+            <div class="cabecera__logo">
+                <a class="logo" href="">
+                    <img class="logo__img" src="" alt="">
+                </a>
+            </div>
+
+            <div class="cabecera__iniciar-sesión">
+                <a href="" class="boton_iniciar-sesion">
+                    <span class=" icon-user"></span>
+                    <h5 class="boton_iniciar-sesion__texto">Iniciar Sesion</h5>
+                </a>
+            </div>
+            
+        </header>
+        <!-- fin cabezera-->
+        <main class="cuerpo">
+            <div class="contenedor-grafica">
+                <h2 class="contenedor-grafica__titulo">
+                    Grafica de barras
+                </h2>
+
+                <hr class="contenedor-grafica__separador">
+                
+                <div class="contenedor-grafica__datos-primarios">
+                    <div class="datos-primnarios_cant-datos">
+                        <label for="cant-datos__input">Cantidad de Datos:</label>
+                        <input id="cant-datos__input" type="number">
+                    </div>
+                    <div class="datos-primnarios_nombre-grafico">
+                        <label for="nombre-grafico__input">Nombre del Grafico:</label>
+                        <input id="nombre-grafico__input" type="text">
+                    </div>
+                </div>
+                <div class="contenedor__boton-ir">
+                    <button class="boton__ir" id="boton__ir">
+                        ir
+                    </button>
+                </div>
+                <hr class="contenedor-grafica__separador">
+                <div class="contenedor__datos-ingresados ocultar">
+                    <div class="datos-ingresados__nombre-columnas ocultar-div-datos" id="datos-ingresados__nombre-columnas">
+
+                    </div>
+                    <div class="datos-ingresados__valor-columnas ocultar-div-datos" id="datos-ingresados__valor-columnas">
+
+                    </div>
+                </div>
+                <div class="contenedor-grafica__boton-calcular ocultar ">
+                    <button class="boton-calcular" id="boton-graficar">
+                        Graficar
+                    </button>
+                </div>
+                <hr class="contenedor-grafica__separador  ocultar">
+                <div class="contenedor-grafica__grafica-barras">
+                    <canvas class="myChart" id="myChart"></canvas>
+                </div>
+                <hr class="contenedor-grafica__separador">
+                <div class="contenedor-grafica__boton-descargar-png">
+                    <button class="boton-descargar-png" id="boton-descargar-png">
+                        Descargar PNG
+                    </button>
+                </div>
+            </div>
+        </main>
+        <footer class="pie-pagina">
+            <div class="pie-pagina__acerca-de">
+                
+                <ul>
+                    <h3>
+                        Acerca de:
+                    </h3>
+                    <li><a href=""> Reporta error</a></li>
+                    <li><a href=""> Contactame</a></li>
+                    <li><a href=""> Dejar comentarior</a></li>
+                </ul>
+            </div>
+            <div class="pie-pagina__redes-s">
+                <ul>
+                    <li><span class="icon-facebook"></span></li>
+                    <li><span class="icon-twitter"></span></li>
+                    <li><span class="icon-instagram"></span></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
