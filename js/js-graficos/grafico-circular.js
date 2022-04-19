@@ -19,6 +19,18 @@ let contadorBtnGraficar=0;
 let objetoChart={};
 // capturando btn desgargar grafico png
 let btnDescargarPng =document.getElementById("boton-descargar-png");
+// capturando checkbox para validar segun el tipo de grafico 
+let checkCirculo =document.getElementById("tipo-grafico-circulo__input");
+let checkAnillo = document.getElementById("tipo-grafico-anillo__input")
+let tipoGrafico;
+// funcion escucha checkbox circular
+checkCirculo.addEventListener("click", function(){
+    checkAnillo.checked = false;
+})
+// funcion escucha checkbox anillo 
+checkAnillo.addEventListener("click", function(){
+    checkCirculo.checked=false;
+})
 
 // funcion de escucha para el btn ir 
 btnIr.addEventListener("click", function(){
@@ -27,6 +39,9 @@ btnIr.addEventListener("click", function(){
     }
     else if(inputCantDatos.value>25){
         alert("La maxima cantidad de datos a ingresar son 25")
+    }
+    else if (checkCirculo.checked === false && checkAnillo.checked === false){
+        alert("seleccione alguno de los dos tipos de graficos")
     }
     else{
         // while para limpiar los label y inputs
@@ -66,6 +81,11 @@ btnIr.addEventListener("click", function(){
         ocultosDivDatos.forEach(el=>{
             el.setAttribute("style", "display:block");
         })
+        if(checkCirculo.checked === true){
+            tipoGrafico= "pie"
+        }else if(checkAnillo.checked=== true){
+            tipoGrafico= "doughnut"
+        }
     }
 })
 btnGraficar.addEventListener("click", function(){
@@ -104,11 +124,11 @@ btnGraficar.addEventListener("click", function(){
         }
     })
     if(contadorBtnGraficar===0){
-        objetoChart=graficadora(arrayNombreColumna,arraryValorColumna,inputNombreGrafico.value,arrayNombreColumna.length,"bar")
+        objetoChart=graficadora(arrayNombreColumna,arraryValorColumna,inputNombreGrafico.value,arrayNombreColumna.length,tipoGrafico)
         contadorBtnGraficar++;
     }else{
         objetoChart.destroy();
-        objetoChart=graficadora(arrayNombreColumna,arraryValorColumna,inputNombreGrafico.value,arrayNombreColumna.length,"bar")
+        objetoChart=graficadora(arrayNombreColumna,arraryValorColumna,inputNombreGrafico.value,arrayNombreColumna.length,tipoGrafico)
     }
 
 })
@@ -144,4 +164,3 @@ const graficadora = (nombres,valores,nombreGrafico,cantidadDatos,tipo)=>{
     }
     return myChart;
 }
-

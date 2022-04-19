@@ -1,0 +1,12 @@
+.datos__posicion{
+    width:100%;
+}
+.datos__posicion div{
+    display: inline-block;
+}
+.datos__posicion__titulo{
+    margin: 0;
+}
+.posicion-x{
+    margin-right: 5px !important;
+}

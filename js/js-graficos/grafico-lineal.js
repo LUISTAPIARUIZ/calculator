@@ -104,11 +104,11 @@ btnGraficar.addEventListener("click", function(){
         }
     })
     if(contadorBtnGraficar===0){
-        objetoChart=graficadora(arrayNombreColumna,arraryValorColumna,inputNombreGrafico.value,arrayNombreColumna.length,"bar")
+        objetoChart=graficadora(arrayNombreColumna,arraryValorColumna,inputNombreGrafico.value,arrayNombreColumna.length,"line")
         contadorBtnGraficar++;
     }else{
         objetoChart.destroy();
-        objetoChart=graficadora(arrayNombreColumna,arraryValorColumna,inputNombreGrafico.value,arrayNombreColumna.length,"bar")
+        objetoChart=graficadora(arrayNombreColumna,arraryValorColumna,inputNombreGrafico.value,arrayNombreColumna.length,"line")
     }
 
 })
@@ -132,7 +132,8 @@ const graficadora = (nombres,valores,nombreGrafico,cantidadDatos,tipo)=>{
                 label:"MI grafico",
                 data:valores,
                 backgroundColor:
-                    colorAleatorio(cantidadDatos)
+                    colorAleatorio(cantidadDatos),
+                borderColor:colorAleatorio(cantidadDatos)[0]
             }]
         }
     })
