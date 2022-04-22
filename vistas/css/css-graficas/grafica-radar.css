@@ -1,0 +1,34 @@
+.datos-nombres__titulo,.datos-valores__titulo{
+    margin: 5px;
+    width: 100%;
+    text-align: center;
+}
+.datos-nombres{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.datos-nombres div ,
+ .contenedor-grafica__datos-primarios div,
+ .datos-valores div{
+    margin: 5px 0;
+    text-align: center;
+}
+.ocultar-nombres,
+.ocultar-valores{
+    display: none;
+}
+.datos-nombre__boton-crear-nombres{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    margin: 8px;;
+}
+.datos-valores{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.contenedor-grafica__boton-calcular{
+    margin: 5px;
+}

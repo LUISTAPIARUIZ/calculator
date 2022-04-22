@@ -25,10 +25,11 @@
     justify-content:center;
 }
 .myChart{
-    width: 95%;
-    height:20rem;
+    width: 95%  !important;
 }
-.boton__ir,.boton-calcular,.boton-descargar-png{
+.boton__ir,.boton-calcular,
+.boton-descargar-png,
+.boton-crear-nombres{
     background-color:rgba(0, 66, 247, 0.226);
     border-color:rgba(0, 0, 0, 0.37);
     border-radius:5px;

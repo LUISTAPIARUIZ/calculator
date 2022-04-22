@@ -75,8 +75,8 @@ btnGraficar.addEventListener("click", function(){
     let valoresX = document.querySelectorAll(".posicion-x input");
     let valoresY = document.querySelectorAll(".posicion-y input");
 
-    arrayvaloresX.splice(0 ,valoresX.length);
-    arrayValoresY.splice(0 ,valoresY.length);
+    arrayvaloresX.splice(0 ,arrayvaloresX.length);
+    arrayValoresY.splice(0 ,arrayValoresY.length);
     arrayPosiciones.splice(0 ,arrayPosiciones.length);
     // recorriendo las columas y creando arrays
     valoresX.forEach(e=>{
