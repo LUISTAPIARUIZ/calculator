@@ -73,14 +73,14 @@
     margin: 6rem 0 2rem 0;
 }
 .animacion__img{
+    width:3rem;
     height:24px;
     position: relative;
     left: 0;
-
 }
 .img__carro{
     width:3rem;
-    height:1.5rem;
+    height:24px;
 }
 .animacion__pista{
     width: 100%;
@@ -114,6 +114,13 @@
 .mover-carro{
     position: relative;
     left:calc(100% - calc(48px));
+}
+.ingreso-datos__boton-cancelar-animacion{
+    display:flex;
+    justify-content:center;
+}
+.ocultar-btn-cancelar-animacion{
+    display:none;
 }
 @media (max-width: 450px) { 
     .contenedor-mru{
